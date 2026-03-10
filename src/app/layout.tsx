@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { SITE_META } from "@/constants";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,9 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Avelino Fisioterapia | Cuidado Premium em Fisioterapia",
-  description:
-    "Transforme seu recomeço. Fisioterapia especializada com equipamento Ez Body e atendimento focado no bem-estar através do movimento inteligente.",
+  title: SITE_META.title,
+  description: SITE_META.description,
   keywords: [
     "fisioterapia",
     "ez body",
@@ -23,7 +23,35 @@ export const metadata: Metadata = {
     "bem-estar",
     "avelino fisioterapia",
     "liviane avelino",
+    "fisioterapia florianopolis",
+    "fisioterapia funcional",
   ],
+  openGraph: {
+    title: SITE_META.title,
+    description: SITE_META.description,
+    url: "https://avelinofisioterapia.com.br",
+    siteName: "Avelino Fisioterapia",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/assets/Livi-Corporativa-19.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dra. Liviane Avelino - Avelino Fisioterapia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_META.title,
+    description: SITE_META.description,
+    images: ["/assets/Livi-Corporativa-19.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
