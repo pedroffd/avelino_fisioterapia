@@ -1,5 +1,7 @@
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_META } from "@/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -25,6 +27,17 @@ export function Footer() {
             Cuidado premium e reabilitação moderna. Movimento inteligente para
             transformar seu recomeço, com a dedicação da Dra. Liviane Avelino.
           </p>
+          <div className="flex items-center gap-4 pt-2">
+            <a
+              href={SITE_META.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-foreground)] transition-all duration-300"
+              aria-label="Siga-nos no Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+          </div>
         </div>
 
         {/* Links */}
@@ -73,18 +86,18 @@ export function Footer() {
           <h4 className="text-white font-semibold tracking-wider font-serif">
             Contato
           </h4>
-          <ul className="space-y-2 text-sm flex flex-col gap-2">
-            <li className="flex items-start gap-2">
-              <span className="text-[var(--color-gold)]">📍</span>
-              Atendimento presencial sujeito a agendamento
+          <ul className="space-y-3 text-sm flex flex-col">
+            <li className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 text-[var(--color-gold)] shrink-0" />
+              <span>Atendimento presencial sujeito a agendamento</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--color-gold)]">📱</span>
-              (48) 99999-9999
+            <li className="flex items-center gap-3">
+              <Phone className="w-5 h-5 text-[var(--color-gold)] shrink-0" />
+              <span>(48) 99630-3076</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-[var(--color-gold)]">✉️</span>
-              contato@avelinofisioterapia.com.br
+            <li className="flex items-center gap-3">
+              <Mail className="w-5 h-5 text-[var(--color-gold)] shrink-0" />
+              <span>contato@avelinofisioterapia.com.br</span>
             </li>
           </ul>
         </div>

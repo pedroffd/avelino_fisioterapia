@@ -9,4 +9,5 @@ export const SITE_META = {
   title: "Avelino Fisioterapia | Cuidado Premium em Fisioterapia",
   description:
     "Transforme seu recomeço. Fisioterapia especializada com equipamento Ez Body e atendimento focado no bem-estar através do movimento inteligente.",
+  instagramUrl: "https://www.instagram.com/livianeavelino/",
 };
