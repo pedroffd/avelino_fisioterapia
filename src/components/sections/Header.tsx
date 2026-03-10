@@ -14,6 +14,7 @@ export function Header() {
             width={40}
             height={40}
             className="h-10 w-auto"
+            priority
           />
           <span className="font-serif text-xl font-bold text-[var(--color-primary)] hidden sm:inline">
             Avelino Fisioterapia

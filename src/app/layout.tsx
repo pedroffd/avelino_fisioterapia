@@ -63,6 +63,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <link
+          rel="preload"
+          href="/assets/logo.png"
+          as="image"
+          type="image/png"
+        />
+        <link
+          rel="preload"
+          href="/assets/Livi-Corporativa-19.webp"
+          as="image"
+          type="image/webp"
+        />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
