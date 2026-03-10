@@ -84,7 +84,7 @@ export function Services() {
         <div className="w-full md:w-1/2 relative h-[300px] md:h-[500px]">
           {/* Typically we'd use an image of the equipment here. Given the provided assets, we use one of Liviane treating someone or a clean photo */}
           <Image
-            src="/assets/Livi-Corporativa-71.jpg"
+            src="/assets/Livi-Corporativa-71.webp"
             alt="Tratamento Ez Body Fisioterapia"
             fill
             className="object-cover"

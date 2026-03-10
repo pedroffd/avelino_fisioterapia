@@ -40,7 +40,7 @@ export function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[var(--color-gold-light)] rounded-full blur-3xl opacity-50 z-0"></div>
 
             <Image
-              src="/assets/Livi-Corporativa-19.jpg"
+              src="/assets/Livi-Corporativa-19.webp"
               alt="Liviane Avelino Fisioterapeuta"
               fill
               className="object-cover object-top rounded-t-full rounded-b-[40px] shadow-2xl z-10 border-4 border-white"

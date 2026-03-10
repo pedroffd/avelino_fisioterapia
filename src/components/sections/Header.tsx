@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { WHATSAPP_LINK } from "@/constants";
@@ -7,7 +8,14 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-serif text-2xl font-bold text-[var(--color-primary)]">
+          <Image
+            src="/assets/logo.png"
+            alt="Avelino Fisioterapia Logo"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
+          />
+          <span className="font-serif text-xl font-bold text-[var(--color-primary)] hidden sm:inline">
             Avelino Fisioterapia
           </span>
         </Link>

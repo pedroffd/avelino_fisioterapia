@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -8,7 +9,14 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8 max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <Link href="/" className="inline-block">
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/assets/logo.png"
+              alt="Avelino Fisioterapia Logo"
+              width={32}
+              height={32}
+              className="h-8 w-auto brightness-0 invert"
+            />
             <span className="font-serif text-2xl font-bold text-[var(--color-gold)]">
               Avelino Fisioterapia
             </span>
