@@ -84,7 +84,17 @@ export function Footer() {
 
       <div className="container mx-auto px-4 md:px-8 max-w-6xl mt-12 pt-8 border-t border-white/10 text-xs text-center flex flex-col items-center justify-center gap-2">
         <p>&copy; {year} Avelino Fisioterapia. Todos os direitos reservados.</p>
-        <p className="text-white/40">Desenvolvido com excelência</p>
+        <p className="text-white/40">
+          Desenvolvido com excelência por{" "}
+          <a
+            href="https://pedrosouza.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[var(--color-gold)] hover:underline"
+          >
+            Pedro Souza
+          </a>
+        </p>
       </div>
     </footer>
   );
