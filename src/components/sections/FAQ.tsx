@@ -1,3 +1,5 @@
+import * as Accordion from "@radix-ui/react-accordion";
+import { ChevronDown } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 
 const FAQS = [
@@ -26,7 +28,7 @@ const FAQS = [
 export function FAQ() {
   return (
     <Section id="faq">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12 space-y-4">
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-foreground)]">
             Perguntas Frequentes
@@ -37,19 +39,29 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="space-y-6">
+        <Accordion.Root type="single" collapsible className="space-y-4">
           {FAQS.map((faq) => (
-            <div
+            <Accordion.Item
               key={faq.question}
-              className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow"
+              value={faq.question}
+              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
             >
-              <h3 className="font-serif text-xl font-bold text-[var(--color-primary)] mb-3">
-                {faq.question}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-            </div>
+              <Accordion.Header>
+                <Accordion.Trigger className="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-gray-50 transition-colors group">
+                  <span className="font-serif text-xl font-bold text-[var(--color-primary)]">
+                    {faq.question}
+                  </span>
+                  <ChevronDown className="w-5 h-5 text-[var(--color-gold)] transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                </Accordion.Trigger>
+              </Accordion.Header>
+              <Accordion.Content className="data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up overflow-hidden">
+                <div className="p-6 md:px-8 md:pb-8 pt-0 text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </div>
+              </Accordion.Content>
+            </Accordion.Item>
           ))}
-        </div>
+        </Accordion.Root>
       </div>
     </Section>
   );

@@ -51,32 +51,33 @@ export function Services() {
       <div className="bg-[var(--color-primary)] rounded-3xl overflow-hidden shadow-2xl mb-16 text-white flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 p-8 md:p-12 space-y-6">
           <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold tracking-wide backdrop-blur-sm">
-            Tecnologia Exclusiva
+            Tecnologia Personalizada
           </div>
-          <h3 className="font-serif text-3xl font-bold">Aparelho Ez Body</h3>
+          <h3 className="font-serif text-3xl font-bold">O que é o EZBODY?</h3>
           <p className="text-white/90 text-lg leading-relaxed">
-            O diferencial do nosso consultório. A tecnologia Ez Body proporciona
-            estímulos precisos e potencializa o recrutamento muscular e a
-            recuperação tecidual de forma segura e indolor.
+            Um novo estilo de treino onde utilizamos uma eletroestimulação
+            diferenciada para promover **Emagrecimento** e **Definição Muscular
+            Corporal**. Ideal para quem busca resultados visíveis sem abrir mão
+            da praticidade.
           </p>
           <ul className="space-y-3 pt-4">
             <li className="flex items-center gap-3">
               <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm">
                 ✓
               </span>
-              Resultados acelerados
+              Seguro, personalizado e inovador
             </li>
             <li className="flex items-center gap-3">
               <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm">
                 ✓
               </span>
-              Alívio imediato de dores agudas
+              Potencializa resultados sem exigência de dietas
             </li>
             <li className="flex items-center gap-3">
               <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm">
                 ✓
               </span>
-              Aumento da performance muscular
+              Treinamento de alta performance e baixo impacto
             </li>
           </ul>
         </div>
