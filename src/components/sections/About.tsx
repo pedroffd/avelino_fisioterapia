@@ -13,7 +13,7 @@ export function About() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-[var(--color-primary)] rounded-br-3xl"></div>
 
             <Image
-              src="/assets/Livi-Corporativa-19.jpg"
+              src="/assets/Livi-Corporativa-5.jpg"
               alt="Liviane Avelino"
               fill
               className="object-cover rounded-2xl shadow-lg z-10"
