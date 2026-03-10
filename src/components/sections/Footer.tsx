@@ -17,7 +17,7 @@ export function Footer() {
               alt="Avelino Fisioterapia Logo"
               width={32}
               height={32}
-              className="h-8 w-auto brightness-0 invert"
+              className="h-8 w-auto"
             />
             <span className="font-serif text-2xl font-bold text-[var(--color-gold)]">
               Avelino Fisioterapia

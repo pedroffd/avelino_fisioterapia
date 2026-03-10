@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     "liviane avelino",
     "fisioterapia florianopolis",
     "fisioterapia funcional",
+    "fisioterapia palhoca",
+    "fisioterapia palhoça",
   ],
   openGraph: {
     title: SITE_META.title,

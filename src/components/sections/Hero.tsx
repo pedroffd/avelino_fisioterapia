@@ -45,6 +45,8 @@ export function Hero() {
               fill
               className="object-cover object-top rounded-t-full rounded-b-[40px] shadow-2xl z-10 border-4 border-white"
               priority
+              placeholder="empty"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
 
             {/* Floating Badge */}
