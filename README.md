@@ -10,6 +10,7 @@ Este é o projeto oficial do website e sistema de gestão da **Dra. Liviane Avel
 
 *   📄 **Documentação de Env Vars:** [Google Doc Vars](https://docs.google.com/document/d/1jBBo7lDhvunrKk_De2tOEL6PLC40REvsHOj13nktLDw/edit?usp=sharing)
 *   📁 **Assets & Informações Extras (Drive):** [Google Drive Folder](https://drive.google.com/drive/folders/1vvysBylm7kZ5QkJkTDASXkKMlQLgoorI?usp=drive_link)
+*   🎨 **Design (Figma):** [Avelino Fisioterapia - Figma](https://www.figma.com/design/4hP9JDb5JbSnT8zanU5SEl/Avelino-Fisioterapia?node-id=0-1&t=TYpNu2hMApdIr81P-1)
 
 ---
 
