@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Avelino Fisioterapia
 
-## Getting Started
+Este é o projeto oficial do website e sistema de gestão da **Dra. Liviane Avelino**. O objetivo é consolidar sua identidade visual, profissionalismo e facilitar a captação de pacientes via tráfego pago e agendamento inteligente.
 
-First, run the development server:
+🚀 **Live Deploy:** [avelino-fisioterapia.vercel.app](https://avelino-fisioterapia.vercel.app/)
 
+---
+
+## 🔗 Links Úteis
+
+*   📄 **Documentação de Env Vars:** [Google Doc Vars](https://docs.google.com/document/d/1jBBo7lDhvunrKk_De2tOEL6PLC40REvsHOj13nktLDw/edit?usp=sharing)
+*   📁 **Assets & Informações Extras (Drive):** [Google Drive Folder](https://drive.google.com/drive/folders/1vvysBylm7kZ5QkJkTDASXkKMlQLgoorI?usp=drive_link)
+
+---
+
+## 🛠️ Tecnologias Principais
+
+*   **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+*   **Estilização:** [Tailwind CSS 4](https://tailwindcss.com/)
+*   **Banco de Dados:** [Prisma](https://www.prisma.io/) (PostgreSQL)
+*   **Gerenciamento de Estado:** [TanStack Query](https://tanstack.com/query/latest)
+*   **Ícones:** [Lucide React](https://lucide.dev/)
+*   **Lint/Format:** [Biome](https://biomejs.dev/)
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clonar e Instalar
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/pedroffd/avelinofisioterapia.git
+cd avelinofisioterapia
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configurar Variáveis de Ambiente
+Crie um arquivo `.env` na raiz do projeto e preencha com as informações do [documento de suporte](https://docs.google.com/document/d/1jBBo7lDhvunrKk_De2tOEL6PLC40REvsHOj13nktLDw/edit?usp=sharing).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Rodar o Desenvolvimento
+```bash
+yarn dev
+```
+Acesse [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Estrutura de Pastas de Desenvolvimento
+*   `src/app`: Rotas e Layouts (Next.js).
+*   `src/components`: Componentes reutilizáveis e seções da Landing Page.
+*   `src/lib`: Configurações de serviços externos (Google API, Prisma Client).
+*   `prisma`: Schema e Migrations do banco de dados.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Desenvolvimento e Contribuição
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Padrão de Commits
+Este projeto utiliza **Conventional Commits**. Certifique-se de que suas mensagens de commit sigam o padrão (ex: `feat:`, `fix:`, `refactor:`). O `husky` validará isso automaticamente durante o commit.
 
-## Deploy on Vercel
+### Banco de Dados (Prisma)
+Sempre que o `schema.prisma` for alterado ou ao iniciar o projeto, execute:
+```bash
+npx prisma generate  # Gera o cliente Typescript
+npx prisma db push   # Sincroniza o banco de dados (ambiente de dev)
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Qualidade de Código
+Antes de abrir um Pull Request, valide seu código com o Biome:
+```bash
+yarn lint    # Para verificar erros e lints
+yarn format  # Para formatar o código automaticamente
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Gerenciamento de Tarefas
+O gerenciamento de sprint e backlog é feito via **Linear**. Solicite acesso ao workspace **Avelino Fisioterapia** para visualizar as tasks e projetos ativos.
