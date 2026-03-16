@@ -1,59 +1,23 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { SITE_META } from "@/constants";
 
 const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-playfair",
   subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: SITE_META.title,
-  description: SITE_META.description,
-  keywords: [
-    "fisioterapia",
-    "ez body",
-    "reabilitação",
-    "bem-estar",
-    "avelino fisioterapia",
-    "liviane avelino",
-    "fisioterapia florianopolis",
-    "fisioterapia funcional",
-    "fisioterapia palhoca",
-    "fisioterapia palhoça",
-  ],
-  openGraph: {
-    title: SITE_META.title,
-    description: SITE_META.description,
-    url: "https://avelinofisioterapia.com.br",
-    siteName: "Avelino Fisioterapia",
-    locale: "pt_BR",
-    type: "website",
-    images: [
-      {
-        url: "/assets/Livi-Corporativa-19.webp",
-        width: 1200,
-        height: 630,
-        alt: "Dra. Liviane Avelino - Avelino Fisioterapia",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_META.title,
-    description: SITE_META.description,
-    images: ["/assets/Livi-Corporativa-19.webp"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  title: "AvelinoFisio | Gestão Autônoma para Profissionais",
+  description:
+    "Plataforma premium de agendamento e prontuário para clínicas e profissionais independentes.",
 };
 
 export default function RootLayout({
@@ -62,24 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <head>
-        <link
-          rel="preload"
-          href="/assets/logo.png"
-          as="image"
-          type="image/png"
-        />
-        <link
-          rel="preload"
-          href="/assets/Livi-Corporativa-19.webp"
-          as="image"
-          type="image/webp"
-        />
-      </head>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        {children}
-      </body>
+    <html
+      lang="pt-BR"
+      className={`scroll-smooth ${inter.variable} ${playfair.variable}`}
+    >
+      <body className="antialiased font-sans">{children}</body>
     </html>
   );
 }

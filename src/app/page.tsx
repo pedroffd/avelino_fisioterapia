@@ -1,21 +1,19 @@
-import { About } from "@/components/sections/About";
-import { FAQ } from "@/components/sections/FAQ";
-import { Footer } from "@/components/sections/Footer";
-import { Header } from "@/components/sections/Header";
-import { Hero } from "@/components/sections/Hero";
-import { Services } from "@/components/sections/Services";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { Features } from "@/components/landing/Features";
+import { Footer } from "@/components/landing/Footer";
+import { Hero } from "@/components/landing/Hero";
+import { Navbar } from "@/components/landing/Navbar";
+import { Pricing } from "@/components/landing/Pricing";
+import { TargetSegments } from "@/components/landing/TargetSegments";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col w-full bg-[var(--color-background)]">
-      <Header />
-      <main className="flex-1 w-full">
+    <div className="flex flex-col min-h-screen bg-[#fcfbf9]">
+      <Navbar />
+      <main className="flex-grow">
         <Hero />
-        <About />
-        <Services />
-        <Testimonials />
-        <FAQ />
+        <Features />
+        <TargetSegments />
+        <Pricing />
       </main>
       <Footer />
     </div>
